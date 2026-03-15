@@ -1,7 +1,6 @@
 function Header() {
   return (
     <header className="flex justify-between items-center p-10 bg-[#166534] text-[#f0fdf4] border-b-5 border-[#b44747] text-left">
-      {/* Ліва колонка: Контакти та Навігація */}
       <div className="flex flex-col gap-2.5 text-[0.85rem] border-r-2 border-[rgba(173,255,47,0.3)] pr-5 max-w-[250px]">
         <p>Varash, Ukraine</p>
         <p>+38(097) 205 39 80</p>
@@ -27,7 +26,6 @@ function Header() {
         </nav>
       </div>
 
-      {/* Права колонка: Ім'я та Посада */}
       <div className="flex-1 text-right">
         <h1 className="text-[3rem] font-[900] leading-none uppercase mb-2.5 text-[#adff2f] tracking-tight">
           LEONTII MAZANYI

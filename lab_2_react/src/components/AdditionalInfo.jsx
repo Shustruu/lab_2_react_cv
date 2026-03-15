@@ -1,12 +1,11 @@
 function AdditionalInfo() {
   return (
     <section className="p-6">
-      {/* Головний заголовок секції - Червоний з зеленим маркером зліва */}
-      <h2 className="text-[1.2rem] text-[#b44747] uppercase border-l-5 border-[#166534] pl-2.5 mb-5 bg-[#f0fdf4] font-bold">
+           <h2 className="text-[1.2rem] text-[#b44747] uppercase border-l-5 border-[#166534] pl-2.5 mb-5 bg-[#f0fdf4] font-bold">
         Additional Information
       </h2>
 
-      {/* Підзаголовок - Мови */}
+
       <h3 className="text-[#166534] font-bold text-sm uppercase mb-3 tracking-wide">
         Languages
       </h3>
@@ -22,7 +21,7 @@ function AdditionalInfo() {
         </li>
       </ul>
 
-      {/* Підзаголовок - Soft Skills */}
+  
       <h3 className="text-[#166534] font-bold text-sm uppercase mb-3 tracking-wide">
         Soft Skills
       </h3>

@@ -1,13 +1,13 @@
 function Projects() {
   return (
     <section className="p-6 bg-white">
-      {/* Головний заголовок секції */}
+     
       <h2 className="text-[1.2rem] text-[#b44747] uppercase border-l-5 border-[#166534] pl-2.5 mb-8 bg-[#f0fdf4] font-bold">
         Projects
       </h2>
 
       <div className="space-y-8">
-        {/* Проєкт 1 */}
+       
         <article className="group p-5 border-2 border-slate-200 rounded-xl transition-all duration-300 hover:border-[#b44747] hover:shadow-lg">
           <h3 className="text-xl font-bold text-[#166534] mb-2 group-hover:text-[#b44747] transition-colors">
             Developer Portfolio Website
@@ -35,7 +35,6 @@ function Projects() {
           </ul>
         </article>
 
-        {/* Проєкт 2 */}
         <article className="group p-5 border-2 border-slate-200 rounded-xl transition-all duration-300 hover:border-[#b44747] hover:shadow-lg">
           <h3 className="text-xl font-bold text-[#166534] mb-2 group-hover:text-[#b44747] transition-colors">
             Product Reviews Page
@@ -63,7 +62,7 @@ function Projects() {
           </ul>
         </article>
 
-        {/* Проєкт 3 */}
+ 
         <article className="group p-5 border-2 border-slate-200 rounded-xl transition-all duration-300 hover:border-[#b44747] hover:shadow-lg">
           <h3 className="text-xl font-bold text-[#166534] mb-2 group-hover:text-[#b44747] transition-colors">
             Notes Website
