@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class', // ЦЕЙ РЯДОК ДОЗВОЛЯЄ ПЕРЕМИКАТИ ТЕМУ КЛАСОМ 'dark'
+  darkMode: 'class', 
   theme: {
     extend: {},
   },
