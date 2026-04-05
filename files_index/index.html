@@ -7,137 +7,175 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="header-contacts">
-        <p>Varash, Ukraine</p>
-        <p>+38(097) 205 39 80</p>
-        <p>mazleon777@gmail.com</p>
-        <nav>
-          <ul>
-            <li><a id="link-head" href="#">GitHub</a></li>
-            <li><a id="link-head" href="#">LinkedIn</a></li>
-            <li><a id="link-head" href="#">Telegram</a></li>
-          </ul>
-        </nav>
+    <div class="resume-container">
+      <header>
+        <div class="header-contacts">
+          <p>Varash, Ukraine</p>
+          <p>+38(097) 205 39 80</p>
+          <p>mazleon777@gmail.com</p>
+          <nav>
+            <ul>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Telegram</a></li>
+            </ul>
+          </nav>
+          <button id="theme-toggle" class="theme-btn">🌓 Theme</button>
+        </div>
+        <div class="header-main">
+          <h1>Leontii Mazanyi</h1>
+          <p>Full Stack Developer</p>
+        </div>
+      </header>
+
+      <main>
+        <aside class="sidebar">
+          <section>
+            <h2>Tech Skills</h2>
+            <ul>
+              <li>HTML5 / CSS3</li>
+              <li>JavaScript / React / Next.js</li>
+              <li>Git</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Languages</h2>
+            <ul>
+              <li>English - Upper-intermediate</li>
+              <li>Ukrainian - Native</li>
+              <li>Russian - Native</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Soft Skills</h2>
+            <ul>
+              <li>Problem-solving</li>
+              <li>Communication</li>
+              <li>Teamwork</li>
+            </ul>
+          </section>
+        </aside>
+
+        <div class="content">
+          <section>
+            <h2>Summary</h2>
+            <p>
+              Full stack developer with practical experience in creating web
+              applications from idea to launch. I feel confident in both
+              front-end and back-end development, and quickly navigate complex
+              technical tasks. I work with a focus on code quality, user
+              experience, and product stability.
+            </p>
+          </section>
+
+          <section>
+            <h2>Projects</h2>
+            <article>
+              <h3>Developer Portfolio Website</h3>
+              <p>
+                <strong>Tech stack:</strong> HTML, CSS, JavaScript, third-party
+                libraries
+              </p>
+              <p>
+                A team project - a portfolio website for a web developer with a
+                demonstration of works, a user-friendly interface, and a modern
+                design.
+              </p>
+              <p>
+                <strong>Role:</strong> Developer - responsible for the
+                development of the header (structure, styling, adaptability).
+              </p>
+              <ul>
+                <li><a href="#">Live Demo</a></li>
+                <li><a href="#">GitHub</a></li>
+              </ul>
+            </article>
+
+            <article>
+              <h3>Product Reviews Page</h3>
+              <p><strong>Tech stack:</strong> HTML, CSS</p>
+              <p>
+                A team project - a page with customer reviews about the product,
+                made in an easy and understandable style.
+              </p>
+              <p>
+                <strong>Role:</strong> Developer - implemented the reviews
+                section (markup, styling, content placement).
+              </p>
+              <ul>
+                <li><a href="#">Live Demo</a></li>
+                <li><a href="#">GitHub</a></li>
+              </ul>
+            </article>
+
+            <article>
+              <h3>Notes Website</h3>
+              <p><strong>Tech stack:</strong> Next.js</p>
+              <p>
+                An individual test project — a simple note-taking web app with
+                user authentication and basic functionality.
+              </p>
+              <p>
+                <strong>Role:</strong> Full Stack Developer — implemented
+                authentication logic, routing, and core note functionality using
+                Next.js.
+              </p>
+              <ul>
+                <li><a href="#">Live Demo</a></li>
+                <li><a href="#">GitHub</a></li>
+              </ul>
+            </article>
+
+            <div id="reviews-wrapper">
+              <h3>Employer Reviews (Live API)</h3>
+              <div id="reviews-container">Loading reviews...</div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Education</h2>
+            <ul>
+              <li>
+                <strong>National University “Lviv Polytechnic”</strong><br />
+                Bachelor's Degree / Cybersecurity (September 2023 – June 2027)
+              </li>
+              <li>
+                <strong>Training Center "Grand"</strong><br />
+                Certificate / Computer Literacy (October 2017 – October 2018)
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <footer id="main-footer">
+        <p id="system-info"></p>
+      </footer>
+    </div>
+
+    <div id="contact-modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Feedback Form</h2>
+        <form action="https://formspree.io/f/mykbbrwp" method="POST">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number (+380...)"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <button type="submit" class="submit-form-btn">Send</button>
+        </form>
       </div>
+    </div>
 
-      <div class="header-main">
-        <h1>Leontii Mazanyi</h1>
-        <p>Full Stack Developer</p>
-      </div>
-    </header>
-
-    <main>
-      <section>
-        <h2>Summary</h2>
-        <p>
-          Full stack developer with practical experience in creating web
-          applications from idea to launch. I feel confident in both front-end
-          and back-end development, and quickly navigate complex technical
-          tasks. I work with a focus on code quality, user experience, and
-          product stability.
-        </p>
-      </section>
-
-      <section>
-        <h2>Tech Skills</h2>
-        <ul>
-          <li>HTML5 / CSS3</li>
-          <li>JavaScript / React / Next.js</li>
-          <li>Git (working with branches, commits, pull/push, merge)</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Projects</h2>
-
-        <article>
-          <h3>Developer Portfolio Website</h3>
-          <p>
-            <strong>Tech stack:</strong> HTML, CSS, JavaScript, third-party
-            libraries
-          </p>
-          <p>
-            A team project - a portfolio website for a web developer with a
-            demonstration of works, a user-friendly interface, and a modern
-            design.
-          </p>
-          <p>
-            <strong>Role:</strong> Developer - responsible for the development
-            of the header (structure, styling, adaptability).
-          </p>
-          <ul>
-            <li><a href="#">Live Demo</a></li>
-            <li><a href="#">GitHub</a></li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Product Reviews Page</h3>
-          <p><strong>Tech stack:</strong> HTML, CSS</p>
-          <p>
-            A team project - a page with customer reviews about the product,
-            made in an easy and understandable style.
-          </p>
-          <p>
-            <strong>Role:</strong> Developer - implemented the reviews section
-            (markup, styling, content placement).
-          </p>
-          <ul>
-            <li><a href="#">Live Demo</a></li>
-            <li><a href="#">GitHub</a></li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Notes Website</h3>
-          <p><strong>Tech stack:</strong> Next.js</p>
-          <p>
-            An individual test project — a simple note-taking web app with user
-            authentication and basic functionality.
-          </p>
-          <p>
-            <strong>Role:</strong> Full Stack Developer — implemented
-            authentication logic, routing, and core note functionality using
-            Next.js.
-          </p>
-          <ul>
-            <li><a href="#">Live Demo</a></li>
-            <li><a href="#">GitHub</a></li>
-          </ul>
-        </article>
-      </section>
-
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li>
-            <strong>National University “Lviv Polytechnic”</strong><br />
-            Bachelor's Degree / Cybersecurity (September 2023 – June 2027)
-          </li>
-          <li>
-            <strong>Training Center "Grand"</strong><br />
-            Certificate / Computer Literacy (October 2017 – October 2018)
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Additional Information</h2>
-        <h3>Languages</h3>
-        <ul>
-          <li>English - upper-intermediate</li>
-          <li>Ukrainian - native</li>
-          <li>Russian - native</li>
-        </ul>
-        <h3>Soft Skills</h3>
-        <ul>
-          <li>Problem-solving</li>
-          <li>Communication</li>
-          <li>Teamwork</li>
-          <li>Adaptability</li>
-        </ul>
-      </section>
-    </main>
+    <script src="script.js"></script>
   </body>
 </html>
