@@ -51,7 +51,6 @@ async function initReviews(variant) {
     }
 }
 
-// Модальне вікно
 function initModal() {
     const modal = document.getElementById('contact-modal');
     const closeBtn = document.querySelector('.close-button');
@@ -73,25 +72,40 @@ function initModal() {
     };
 }
 
-// Тему переключає по годинам
 function initThemeLogic() {
     const toggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
 
-    function applyAutoTheme() {
-        const hour = new Date().getHours(); 
-        if (hour >= 7 && hour < 21) {
-            body.classList.remove('dark-mode');
-        } else {
+    const savedTheme = localStorage.getItem('theme');
+
+    function applyTheme(isDark) {
+        if (isDark) {
             body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark'); 
+        } else {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
         }
     }
 
-    applyAutoTheme();
+
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+    } else if (savedTheme === 'light') {
+        body.classList.remove('dark-mode');
+    } else {
+        const hour = new Date().getHours(); 
+        if (hour >= 7 && hour < 21) {
+            applyTheme(false); 
+        } else {
+            applyTheme(true); 
+        }
+    }
 
     if (toggleBtn) {
         toggleBtn.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
+            const isCurrentlyDark = body.classList.contains('dark-mode');
+            applyTheme(!isCurrentlyDark);
         });
     }
 }
